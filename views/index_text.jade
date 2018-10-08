@@ -1,0 +1,146 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to our test
+
+    // Wrapper
+    #wrapper
+
+        // USER INFO
+        #userInfo
+            h2 Customer Info
+            p
+                strong Name:
+                |  <span id='userInfoName'></span>
+                br
+                strong Age:
+                |  <span id='userInfoAge'></span>
+                br
+                strong Gender:
+                |  <span id='userInfoGender'></span>
+                br
+                strong Location:
+                |  <span id='userInfoLocation'></span>
+        // /USER INFO
+
+        // USER LIST
+        h2 User List
+        #userList
+            table
+                thead
+                    th UserName
+                    th Email
+                    th Delete?
+                tbody
+        // /USER LIST
+
+        // ADD USER
+        h2 Add User
+        #addUser
+            fieldset
+                input#inputUserName(type='text', placeholder='Username')
+                input#inputUserEmail(type='text', placeholder='Email')
+                br
+                input#inputUserFullname(type='text', placeholder='Full Name')
+                input#inputUserAge(type='text', placeholder='Age')
+                br
+                input#inputUserLocation(type='text', placeholder='Location')
+                input#inputUserGender(type='text', placeholder='gender')
+                br
+                button#btnAddUser Add User
+        // /ADD USER
+
+    // /WRAPPER
+
+    // Wrapper
+    #wrapper
+
+        // PRODUCT INFO
+        #productInfo
+            h2 Product Info
+            p
+                strong Name:
+                |  <span id='productInfoName'></span>
+                br
+                strong Brand:
+                |  <span id='productInfoBrand'></span>
+                br
+                strong Type:
+                |  <span id='productInfoType'></span>
+                br
+                strong Price:
+                |  <span id='productInfoPrice'></span>
+        // /PRODUCT INFO
+
+        // PRODUCT LIST
+        h2 Product List
+        #productList
+            table
+                thead
+                    th ProductName
+                    th Type
+                    th Delete?
+                tbody
+        // /PRODUCT LIST
+
+        // ADD PRODUCT
+        h2 Add Product
+        #addProduct
+            fieldset
+                input#inputProductName(type='text', placeholder='Productname')
+                input#inputProductBrand(type='text', placeholder='Brand')
+                br
+                input#inputProductType(type='text', placeholder='Type')
+                input#inputProductPrice(type='text', placeholder='price')
+                br
+                button#btnAddProduct Add Product
+        // /ADD PRODUCT
+
+    // /WRAPPER
+
+    // Wrapper
+    #wrapper
+
+        // EMPLOYEE INFO
+        #employeeInfo
+            h2 Employee Info
+            p
+                strong Name:
+                |  <span id='employeeInfoName'></span>
+                br
+                strong Designation:
+                |  <span id='employeeInfoDesignation'></span>
+                br
+                strong Age:
+                |  <span id='employeeInfoAge'></span>
+                br
+                strong Salary:
+                |  <span id='employeeInfoSalary'></span>
+        // /EMPLOYEE INFO
+
+        // EMPLOYEE LIST
+        h2 Employee List
+        #employeeList
+            table
+                thead
+                    th EmployeeName
+                    th Designation
+                    th Delete?
+                tbody
+        // /EMPLOYEE LIST
+
+        // ADD EMPLOYEE
+        h2 Add Employee
+        #addEmployee
+            fieldset
+                input#inputEmployeeName(type='text', placeholder='Employeename')
+                input#inputEmployeeDesignation(type='text', placeholder='Designation')
+                br
+                input#inputEmployeeAge(type='text', placeholder='Age')
+                input#inputEmployeeSalary(type='text', placeholder='Salary')
+                br
+                button#btnAddEmployee Add Employee
+        // /ADD EMPLOYEE
+
+        // /WRAPPER

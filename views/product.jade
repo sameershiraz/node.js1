@@ -1,0 +1,51 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to Product Page
+
+    // Wrapper
+    #wrapper
+
+        // EMPLOYEE INFO
+        #employeeInfo
+            h2 Employee Info
+            p
+                strong Name:
+                |  <span id='employeeInfoName'></span>
+                br
+                strong Brand:
+                |  <span id='employeeInfoDesignation'></span>
+                br
+                strong Type:
+                |  <span id='employeeInfoAge'></span>
+                br
+                strong Price:
+                |  <span id='employeeInfoSalary'></span>
+        // /EMPLOYEE INFO
+
+        // EMPLOYEE LIST
+        h2 Employee List
+        #employeeList
+            table
+                thead
+                    th EmployeeName
+                    th Designation
+                    th Delete?
+                tbody
+        // /EMPLOYEE LIST
+
+        // ADD EMPLOYEE
+        h2 Add Employee
+        #addEmployee
+            fieldset
+                input#inputEmployeeName(type='text', placeholder='Employeename')
+                input#inputEmployeeDesignation(type='text', placeholder='Designation')
+                br
+                input#inputEmployeeAge(type='text', placeholder='Age')
+                input#inputEmployeeSalary(type='text', placeholder='Salary')
+                br
+                button#btnAddEmployee Add Employee
+        // /ADD EMPLOYEE
+
+    // /WRAPPER
